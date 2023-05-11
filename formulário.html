@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <fieldset>
+        <form action="salvar_dados" method="post">
+            <legend>cadastro</legend>
+                <label for="name">
+                    Nome:<br>
+                    <input type="text" autocomplete="name" autofocus name="name" id="name" required>
+                </label>
+            <p>
+                <label for="email">
+                    Email:<br>
+                    <input type="email" autocomplete="email" name="email" id="email" required>
+                </label>
+            </p>
+            <p>
+                <label for="idade">
+                    Idade:<br>
+                    <input type="number" min="12" inputmode="numeric" name="idade" id="idade" step="1" required>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Data de Nascimento:<br>
+                    <input type="date" id="data-nascimento" name="data-nascimento" id required >
+                </label>
+            </p>
+            <p>
+                <label> 
+                    Onde você tem conta?<br>
+                    <input type="checkbox">Instagram
+                    <input type="checkbox">Facebook
+                    <input type="checkbox">You Tube
+                </label>
+            </p>
+            <p>
+                <label>
+                    Sexo:<br>
+                    <input type="radio" name="sexo">Masculino
+                    <input type="radio" name="sexo">Feminino
+                </label>
+            </p>
+            <p>
+                <label>
+                    Cor dos olhos:
+                    <input type="color">
+                </label>
+            </p>
+            <p>
+                <label>
+                    <textarea rows="6" cols="40" wrap="">
+                   </textarea>
+                </label>
+            </p>
+            <p>
+                <label>
+                    Foto de perfil:
+                    <input type="file" accept="image/jpeg">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Telefone: <br>
+                    <input type="tel" inputmode="numeric">
+                </label>
+            </p>
+            <p>
+                <label>
+                    Link do perfil do instagram<br>
+                    <input type="url">
+                </label>
+            </p>
+            <p>
+                Senha<br>
+                <input type="password" minlength="6" maxlength="8">
+            </p>
+            <button 
+             type="submit"
+             value="enviar">Enviar Dados
+            </button>
+            <button 
+             type="reset" 
+             value="apagar">Limpar
+            </button>
+        </form>
+    </fieldset>
+</body>
+</html>
